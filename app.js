@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
-const productRoutes = require("./api/routes/products");
+const productRoutes = require("./api/routes/images");
 
 mongoose.connect(
   "mongodb://node-shop:" +
