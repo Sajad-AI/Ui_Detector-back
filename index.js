@@ -9,7 +9,7 @@ var storage = multer.diskStorage({
     cb(null, "./uploads");
   },
   filename: function (req, file, cb) {
-    cb(null, Date() + "_" + file.originalname);
+    cb(null, new Date().toISOString() + "_" + file.originalname.replace(/ /g,"_"));
   },
 });
 var upload = multer({ storage: storage });
