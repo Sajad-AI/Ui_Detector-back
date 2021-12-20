@@ -1,15 +1,33 @@
-# Creating a RESTful API with Node.js
-This repository accompanies my YouTube video series on building a RESTful API with Node.js: [https://github.com/academind/node-restful-api-tutorial.git](https://github.com/academind/node-restful-api-tutorial.git)
+<h1 align = 'center'> Nodejs-Multer-File-Upload </h1>
 
-## Usage
-Check out the branch you're interested in (i.e. which belongs to the video in my series you just watched), ```git clone``` it and thereafter run ```npm install```.
+<div align="center">
 
-Make sure to also add your Mongo Atlas Admin Username to a nodemon.json file (which you have to create).
+[![](https://img.shields.io/badge/Made_with-Nodejs-green?style=for-the-badge&logo=node.js)](https://nodejs.org/en/)
 
+</div>
+
+### About
+
+This repo provides minimum setup required for setting up single/multiple file upload routes. <br>
+You can read blog version of it on
+- <a href="https://www.gyaanibuddy.com/blog/how-to-upload-image-using-multer-in-nodejs/">Gyaanibuddy</a>
+- <a href="https://rugved-bongale.medium.com/how-to-upload-image-using-multer-in-node-js-f3aeffb90657">Medium</a>
+
+
+------------------------------------------
+### Installation
+
+Clone the repository and install node modules
 ```
-{
-    "env": {
-        "MONGO_ATLAS_PW": "YOUR_MONGO_USER_PW"
-    }
-}
+git clone https://github.com/RugvedB/Nodejs-Multer-File.git
+cd Nodejs-Multer-File
+npm i
+mkdir uploads
+node index.js
 ```
+
+Checkout the site on <a href="http://localhost:3000">http://localhost:3000/</a>
+
+
+------------------------------------------
+<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/rugvedb">Rugved</a></h1>
