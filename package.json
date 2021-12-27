@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "test": "mocha test/index.test.js --exit",
     "system-test": "NAME=Cloud mocha test/system.test.js --timeout=180000"
   },
