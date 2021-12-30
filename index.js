@@ -1,8 +1,11 @@
 var express = require("express");
 var multer = require("multer");
+var router = require('./router.js');
 const AppSettings = require("./AppSettings");
 
 var app = express();
+app.use('/api', router);
+
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
