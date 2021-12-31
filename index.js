@@ -1,11 +1,8 @@
 var express = require("express");
 var multer = require("multer");
-var router = require('./router.js');
 const AppSettings = require("./AppSettings");
 
 var app = express();
-app.use('/api', router);
-
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -18,6 +15,7 @@ var storage = multer.diskStorage({
 
 var upload = multer({ storage: storage });
 
+// the public is for testing purpose
 app.use(express.static(__dirname + "/public"));
 app.use("/uploads", express.static("uploads"));
 
